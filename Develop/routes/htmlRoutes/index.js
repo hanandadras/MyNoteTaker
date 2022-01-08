@@ -1,12 +1,13 @@
 const path = require('path');
 const router = require('express').Router();
 
+// localhost:3001
 router.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../../public/index.html'));
 });
 
 router.get('/notes', (req, res) => {
-  res.sendFile(path.join(__dirname, '../../public/index.html'));
+  res.sendFile(path.join(__dirname, '../../public/notes.html'));
 });
 
 
